@@ -30,7 +30,7 @@ const Hero = () => {
                 </span>
               ))}
             </div>
-            <div className="w-[100%] bg-[url('src/assets/img/samueldoghor.png')] bg-cover bg-no-repeat h-screen"></div>
+            <div className="w-[100%] bg-[url('public/img/samueldoghor.png')] bg-cover bg-no-repeat h-screen"></div>
           </div>
         </div>
       </div>
