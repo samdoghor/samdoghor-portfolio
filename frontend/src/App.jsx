@@ -1,5 +1,5 @@
 import React from "react";
-import { Header, Hero, Service } from "./components";
+import { Header, Hero, Service } from "./components/Index";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
