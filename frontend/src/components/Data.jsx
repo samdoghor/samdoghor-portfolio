@@ -3,6 +3,7 @@ import {
   FaLinkedin,
   FaTwitter,
   FaInstagramSquare,
+  FaLink,
 } from "react-icons/fa";
 import Typewriter from "react-ts-typewriter";
 
@@ -94,7 +95,44 @@ export const ServiceData = [
   {
     id: 1,
     service:
-      "A engineer, adept at designing scalable systems with an emphasis on accessibility and interface for digital products.",
-    service2: "I design scalable systems ",
+      "An engineer, adept at designing scalable systems with an emphasis on accessibility and interface for digital products.",
+    service2: "I design",
+    service3: "scalable systems ",
+  },
+];
+
+export const ProjectData = [
+  {
+    in: 1,
+    text: "Featured Projects",
+  },
+];
+
+export const ProjectDData = [
+  {
+    id: 1,
+    title: "MBS",
+    github: "htpps://www.github.com/samdoghor/mbs",
+    githubi: <FaGithub />,
+    labelg: "Github",
+    website: "#",
+    websitei: <FaLink />,
+    labelw: "Website",
+    description:
+      "A sports betting app using Martingale with smart algorithms, limits, analytics, and security features for fewer losses and more wins.",
+    img: "src/assets/images/gomerce.png",
+  },
+  {
+    id: 2,
+    title: "Gomerce",
+    github: "https://github.com/samdoghor/GomerceBE",
+    githubi: <FaGithub />,
+    labelg: "Github",
+    website: "#",
+    websitei: <FaLink />,
+    labelw: "Website",
+    description:
+      "E-commerce app enhanced with JWT authentication, SqlAlchemy, **SQLite** persistence and deployment scripts via Docker. It has all the ready-to-use bare minimum essentials.",
+    img: "src/assets/images/gomerce.png",
   },
 ];

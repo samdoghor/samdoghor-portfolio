@@ -14,6 +14,14 @@ export default {
           blogo: "#1e3552",
         },
       },
+      fontFamily: {
+        caveat: ["Caveat", "cursive"],
+        chakra: ["Chakra Petch", "sans - serif"],
+        hubballi: ["Hubballi", "cursive"],
+      },
+      borderWidth: {
+        d: "25px",
+      },
     },
   },
   plugins: [require("flowbite/plugin")],

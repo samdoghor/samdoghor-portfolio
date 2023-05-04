@@ -4,8 +4,8 @@ import { HeroData } from "./Data";
 const Hero = () => {
   return (
     <>
-      <div className="w-full grid md:grid-cols-3 pt-12">
-        <div className="w-full md:order-2 place-self-center" data-aos="flip-up">
+      <div className="w-full grid lg:grid-cols-3 pt-12 min-h-full">
+        <div className="w-full lg:order-2 place-self-center" data-aos="flip-up">
           <img
             className="rounded-full"
             alt="Samuel Doghor"
@@ -24,7 +24,7 @@ const Hero = () => {
               <p className="text-primary-ylogo font-normal text-lg md:text-xl md:overflow-hidden pb-2 md:pb-4">
                 {d.text}
               </p>
-              <p className="text-slate-400 font-normal text-sm md:text-base md:overflow-hidden pb-4 md:pb-6">
+              <p className="text-slate-400 font-normal text-sm md:text-base md:overflow-hidden pb-4 md:pb-6 leading-relaxed">
                 {d.code1}
               </p>
             </span>
