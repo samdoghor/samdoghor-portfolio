@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Braah+One&family=Caveat&family=Chakra+Petch:wght@300&family=Genos:wght@300&family=Hubballi&family=Nova+Mono&family=Ubuntu:wght@300&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -7,14 +9,15 @@
     overflow-x: hidden;
 }
 
-.nav-link:active::before,
-.nav-link:hover::before {
-  content: '[';
-  position: absolute;
+body::-webkit-scrollbar {
+  width: .4em;
 }
-
-.nav-link:active::after,
-.nav-link:hover::after {
-  content: ']';
-  position: absolute;
+ 
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.6);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: #1e3552;
+  outline: .1px solid #1e3552;
 }
