@@ -120,7 +120,7 @@ export const ProjectDData = [
     labelw: "Website",
     description:
       "A sports betting app using Martingale with smart algorithms, limits, analytics, and security features for fewer losses and more wins.",
-    img: "src/assets/images/gomerce.png",
+    img: "/img/gomerce.png",
   },
   {
     id: 2,
@@ -133,6 +133,6 @@ export const ProjectDData = [
     labelw: "Website",
     description:
       "E-commerce app enhanced with JWT authentication, SqlAlchemy, **SQLite** persistence and deployment scripts via Docker. It has all the ready-to-use bare minimum essentials.",
-    img: "src/assets/images/gomerce.png",
+    img: "/img/gomerce.png",
   },
 ];
