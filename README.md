@@ -3,6 +3,8 @@
 - 📫 How to reach me **talkto@samdoghor.com**
 - ❤️ There is nothing I love to do better than `coding` 🌱
 
+My name is SAMUEL, DOGHOR I'm a passionate backend software engineer with a love for coding. You'll usually find me tapping away at my keyboard, crafting innovative solutions with code, but I also play around with frontend.
+
 ## Connect with me
 
 [![Instagram Badge](https://img.shields.io/badge/-samdoghor-%09%23483D8B?style=for-the-badge&logo=instagram&logoColor=white&link=https://instagram.com/samdoghor)](https://instagram.com/samdoghor)
