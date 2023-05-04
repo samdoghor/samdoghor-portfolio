@@ -9,8 +9,8 @@ export default {
     extend: {
       colors: {
         primary: {
-          logo: "#00a0b3",
-          ylogo: "#fcf903",
+          logo: "#875d1c",
+          ylogo: "#d67c1c",
           blogo: "#1e3552",
         },
       },
