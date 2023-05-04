@@ -9,7 +9,7 @@ const Hero = () => {
           <img
             className="rounded-full"
             alt="Samuel Doghor"
-            src="/assets/images/doghs.jpg"
+            src="public/img/doghs.jpg"
           />
         </div>
         <div className="w-full md:col-span-2 pt-8 md:pt-0" data-aos="fade-down">

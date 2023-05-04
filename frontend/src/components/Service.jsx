@@ -13,7 +13,7 @@ const Service = () => {
                   <img
                     className="rounded-full w-28 hidden md:block"
                     alt="Samuel Doghor"
-                    src="/assets/images/doghs.jpg"
+                    src="/img/doghs.jpg"
                   />
                   <span className="text-white items-center text-5xl md:text-7xl font-bold overflow-hidden ps-4 leading-snug md:leading-relaxed tracking-widest">
                     {d.service2}

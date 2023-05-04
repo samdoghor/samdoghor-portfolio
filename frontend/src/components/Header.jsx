@@ -1,6 +1,6 @@
 import { Avatar, Dropdown, Navbar } from "flowbite-react";
 import { headerLogoData, headerNavData, headerSocialData } from "./Data";
-import ProfileImage from "../assets/images/doghs.jpg";
+import ProfileImage from "/img/doghs.jpg";
 
 const Header = () => {
   return (
