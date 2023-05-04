@@ -11,6 +11,7 @@ export default {
         primary: {
           logo: "#00a0b3",
           ylogo: "#fcf903",
+          blogo: "#1e3552",
         },
       },
     },

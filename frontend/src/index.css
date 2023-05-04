@@ -10,11 +10,22 @@
 .nav-link:active::before,
 .nav-link:hover::before {
   content: '[';
-  position: absolute;
 }
 
 .nav-link:active::after,
 .nav-link:hover::after {
   content: ']';
-  position: absolute;
+}
+
+body::-webkit-scrollbar {
+  width: .4em;
+}
+ 
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.6);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: #1e3552;
+  outline: .1px solid #1e3552;
 }
