@@ -23,7 +23,7 @@ const Project = () => {
                   <p className="text-primary-ylogo text-4xl font-semibold overflow-hidden pb-3 font-hubballi">
                     {d.title}
                   </p>
-                  <p className="flex pb-3 items-center gap-6 text-white text-lg font-caveat font-extralight">
+                  <p className="flex pb-3 items-center gap-6 text-white text-lg font-nova font-extralight">
                     <a href={d.github} className="flex items-center gap-1">
                       {d.githubi} <span> {d.labelg}</span>
                     </a>
@@ -39,7 +39,7 @@ const Project = () => {
               <div className="w-full">
                 <div className="flex place-content-center">
                   <img
-                    className="flex w-5/6 h-3/6 rounded-[30px] mb-8 place-self-center border-t-d border-l-d border-teal-700"
+                    className="flex w-full lg:w-4/6 h-3/6 rounded-[30px] mb-8 place-self-center border-t-d border-l-d border-teal-700"
                     alt="Samuel Doghor"
                     src={d.img}
                   />

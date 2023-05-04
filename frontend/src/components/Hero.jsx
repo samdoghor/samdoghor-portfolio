@@ -12,20 +12,29 @@ const Hero = () => {
             src="/img/doghs.jpg"
           />
         </div>
-        <div className="w-full md:col-span-2 pt-8 md:pt-0" data-aos="fade-down">
+        <div
+          className="w-full md:col-span-2 pt-8 md:pt-0"
+          data-aos="fade-right"
+        >
           {HeroData.map((d) => (
             <span>
-              <p className="text-primary-ylogo font-black text-4xl md:text-7xl md:overflow-hidden pb-2 md:pb-4 pt-8 md:pt-16">
+              <p className="text-primary-ylogo font-black text-7xl md:overflow-hidden pb-10 pt-8 md:pt-16 overflow-hidden">
                 {d.name}
               </p>
-              <p className="text-white font-black text-2xl md:text-6xl md:overflow-hidden pb-8 md:pb-12 tracking-widest">
+              <p className="text-white font-black text-6xl md:overflow-hidden pb-8 tracking-widest font-ubuntu">
                 {d.stack}
               </p>
-              <p className="text-primary-ylogo font-normal text-lg md:text-xl md:overflow-hidden pb-2 md:pb-4">
+              <p className="text-primary-ylogo text-4xl md:overflow-hidden pb-2 md:pb-8 font-genos font-semibold">
                 {d.text}
               </p>
-              <p className="text-slate-400 font-normal text-sm md:text-base md:overflow-hidden pb-4 md:pb-6 leading-relaxed">
+              <p className="hidden lg:block text-slate-400 font-normal text-2xl md:overflow-hidden pb-4 md:pb-6 leading-relaxed font-caveat">
                 {d.code1}
+              </p>
+              <p className="lg:hidden text-slate-400 font-normal text-2xl md:overflow-hidden pb-4 md:pb-6 leading-relaxed font-caveat">
+                {d.code2}
+              </p>
+              <p className="lg:hidden text-slate-400 font-normal text-2xl md:overflow-hidden pb-4 md:pb-6 leading-relaxed font-caveat">
+                {d.code3}
               </p>
             </span>
           ))}

@@ -15,9 +15,13 @@ export default {
         },
       },
       fontFamily: {
+        braah: ["Braah One", "sans-serif"],
         caveat: ["Caveat", "cursive"],
         chakra: ["Chakra Petch", "sans - serif"],
+        genos: ["Genos", "sans-serif"],
         hubballi: ["Hubballi", "cursive"],
+        nova: ["Nova Mono", "monospace"],
+        ubuntu: ["Ubuntu", "sans-serif"],
       },
       borderWidth: {
         d: "25px",

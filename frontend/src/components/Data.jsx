@@ -79,13 +79,22 @@ export const HeroData = [
     id: 1,
     name: "Samuel, Doghor",
     stack: "Backend Engineer",
-    text: "I also play around with frontend designs.",
+    text: "I also play around with frontend.",
     code1: (
       <Typewriter
         loop={true}
         speed={100}
         delay={2000}
         text=' "const App = () => {return (<div >App </div>)} export default App" '
+      />
+    ),
+    code2: ' "const App = () => {return (<div > ',
+    code3: (
+      <Typewriter
+        loop={true}
+        speed={100}
+        delay={2000}
+        text=' App </div>)} export default App" '
       />
     ),
   },
