@@ -12,6 +12,7 @@ export default {
           logo: "#875d1c",
           ylogo: "#d67c1c",
           blogo: "#1e3552",
+          cylogo: "#f4d8c6",
         },
       },
       fontFamily: {
