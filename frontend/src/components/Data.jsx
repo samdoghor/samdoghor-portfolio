@@ -4,7 +4,19 @@ import {
   FaTwitter,
   FaInstagramSquare,
   FaLink,
+  FaGitAlt,
+  FaPython,
 } from "react-icons/fa";
+import {
+  DiJavascript,
+  DiReact,
+  DiPostgresql,
+  DiMysql,
+  DiMongodb,
+  DiHeroku,
+  DiDocker,
+  DiDjango,
+} from "react-icons/di";
 import Typewriter from "react-ts-typewriter";
 
 // Header
@@ -110,6 +122,12 @@ export const ServiceData = [
   },
 ];
 
+export const TestimoniesData = [
+  {
+    id: 1,
+  },
+];
+
 export const ProjectData = [
   {
     in: 1,
@@ -143,5 +161,83 @@ export const ProjectDData = [
     description:
       "E-commerce app enhanced with JWT authentication, SqlAlchemy, **SQLite** persistence and deployment scripts via Docker. It has all the ready-to-use bare minimum essentials.",
     img: "/img/gomerce.png",
+  },
+];
+
+export const BlogData = [
+  {
+    in: 1,
+    text: "Featured Blog",
+    cs: "Coming Soon!",
+  },
+];
+
+export const TechnologiesData = [
+  {
+    in: 1,
+    heading: "Technologies",
+  },
+];
+
+export const TechnologiesDData = [
+  {
+    id: 1,
+    label: "Git",
+    icon: <FaGitAlt />,
+    category: "Version C.",
+  },
+  {
+    id: 2,
+    label: "Python",
+    icon: <FaPython />,
+    category: "Language",
+  },
+  {
+    id: 3,
+    label: "Javascript",
+    icon: <DiJavascript />,
+    category: "Language",
+  },
+  {
+    id: 4,
+    label: "React",
+    icon: <DiReact />,
+    category: "Framework",
+  },
+  {
+    id: 5,
+    label: "PostgreSQL",
+    icon: <DiPostgresql />,
+    category: "Database",
+  },
+  {
+    id: 6,
+    label: "MySQL",
+    icon: <DiMysql />,
+    category: "Database",
+  },
+  {
+    id: 7,
+    label: "MongDB",
+    icon: <DiMongodb />,
+    category: "Database",
+  },
+  {
+    id: 8,
+    label: "Heroku",
+    icon: <DiHeroku />,
+    category: "Cloud",
+  },
+  {
+    id: 9,
+    label: "Docker",
+    icon: <DiDocker />,
+    category: "Containerization",
+  },
+  {
+    id: 10,
+    label: "Django",
+    icon: <DiDjango />,
+    category: "Framework",
   },
 ];

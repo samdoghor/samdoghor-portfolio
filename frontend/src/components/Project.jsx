@@ -39,7 +39,7 @@ const Project = () => {
               <div className="w-full">
                 <div className="flex place-content-center">
                   <img
-                    className="flex w-full lg:w-4/6 h-3/6 rounded-[30px] mb-8 place-self-center border-t-d border-l-d border-teal-700"
+                    className="flex w-full lg:w-4/6 h-3/6 rounded-[30px] mb-8 place-self-center border-t-d border-l-d border-primary-ylogo"
                     alt="Samuel Doghor"
                     src={d.img}
                   />

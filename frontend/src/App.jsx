@@ -1,5 +1,13 @@
 import React from "react";
-import { Header, Hero, Service, Project } from "./components/Index";
+import {
+  Header,
+  Hero,
+  Service,
+  Testimonies,
+  Project,
+  Blog,
+  Technologies,
+} from "./components/Index";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -12,7 +20,10 @@ const App = () => {
         <Header />
         <Hero />
         <Service />
+        {/* <Testimonies /> */}
         <Project />
+        {/* <Blog /> */}
+        <Technologies />
       </div>
     </>
   );
