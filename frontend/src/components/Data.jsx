@@ -17,6 +17,10 @@ import {
   DiDocker,
   DiDjango,
 } from "react-icons/di";
+import FlaskOriginal from "react-devicons/flask/original-wordmark";
+import KubernetesPlain from "react-devicons/kubernetes/plain";
+import TypescriptPlain from "react-devicons/typescript/plain";
+import NodejsPlain from "react-devicons/nodejs/plain";
 import Typewriter from "react-ts-typewriter";
 
 // Header
@@ -239,5 +243,29 @@ export const TechnologiesDData = [
     label: "Django",
     icon: <DiDjango />,
     category: "Framework",
+  },
+  {
+    id: 11,
+    label: "Flask",
+    icon: <FlaskOriginal color="#FFFFFF" />,
+    category: "Framework",
+  },
+  {
+    id: 12,
+    label: "Flask",
+    icon: <KubernetesPlain color="#FFFFFF" />,
+    category: "Orchestration",
+  },
+  {
+    id: 13,
+    label: "Flask",
+    icon: <TypescriptPlain color="#FFFFFF" />,
+    category: "Language",
+  },
+  {
+    id: 14,
+    label: "Flask",
+    icon: <NodejsPlain color="#FFFFFF" />,
+    category: "Runtime Env.",
   },
 ];

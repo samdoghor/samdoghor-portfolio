@@ -7,7 +7,7 @@ const Project = () => {
       <div className="w-full mt-40 lg:mt-44 min-h-full overflow-hidden">
         <div data-aos="flip-down">
           {ProjectData.map((d) => (
-            <p className="text-white font-semibold text-6xl overflow-hidden leading-snug md:leading-normal">
+            <p className="text-primary-cylogo font-semibold text-6xl overflow-hidden leading-snug md:leading-normal">
               {d.text}
             </p>
           ))}
