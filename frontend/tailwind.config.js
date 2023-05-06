@@ -9,9 +9,23 @@ export default {
     extend: {
       colors: {
         primary: {
-          logo: "#00a0b3",
-          ylogo: "#fcf903",
+          logo: "#875d1c",
+          ylogo: "#d67c1c",
+          blogo: "#1e3552",
+          cylogo: "#f4d8c6",
         },
+      },
+      fontFamily: {
+        braah: ["Braah One", "sans-serif"],
+        caveat: ["Caveat", "cursive"],
+        chakra: ["Chakra Petch", "sans - serif"],
+        genos: ["Genos", "sans-serif"],
+        hubballi: ["Hubballi", "cursive"],
+        nova: ["Nova Mono", "monospace"],
+        ubuntu: ["Ubuntu", "sans-serif"],
+      },
+      borderWidth: {
+        d: "25px",
       },
     },
   },

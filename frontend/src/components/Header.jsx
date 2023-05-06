@@ -1,6 +1,6 @@
 import { Avatar, Dropdown, Navbar } from "flowbite-react";
 import { headerLogoData, headerNavData, headerSocialData } from "./Data";
-import ProfileImage from "../assets/images/doghs.jpg";
+import ProfileImage from "/img/doghs.jpg";
 
 const Header = () => {
   return (
@@ -32,9 +32,14 @@ const Header = () => {
           }
         >
           <Dropdown.Header>
-            <span className="block text-sm">Doghor Samuel</span>
-            <span className="block truncate text-sm font-medium">
-              talkto@samdoghor.com
+            <span className="block text-lg text-primary-blogo font-bold">
+              Samuel, Doghor
+            </span>
+            <span className="block truncate text-sm font-medium text-primary-blogo hover:text-primary-logo">
+              <a href="mailto:talkto@samdoghor"> talkto@samdoghor.com </a>
+            </span>
+            <span className="block truncate text-sm font-medium text-primary-blogo hover:text-primary-logo">
+              <a href="tel:+2348031390921"> +234-803-139-0921 </a>
             </span>
           </Dropdown.Header>
           <Dropdown.Item>
@@ -45,7 +50,7 @@ const Header = () => {
                   href={d.link}
                   target="_blank"
                   rel="noreferrer"
-                  className="pe-4 inline-flex hover:text-primary-ylogo text-end"
+                  className="pe-4 inline-flex text-primary-blogo hover:text-primary-logo text-end"
                 >
                   {d.icon}
                 </a>
@@ -57,7 +62,11 @@ const Header = () => {
       </div>
       <Navbar.Collapse>
         {headerNavData.map((d) => (
-          <Navbar.Link key={d.id} href={d.link} className="text-white">
+          <Navbar.Link
+            key={d.id}
+            href={d.link}
+            className="text-white md:hover:text-primary-logo"
+          >
             {d.nav}
           </Navbar.Link>
         ))}
