@@ -136,7 +136,7 @@ export const TestimoniesData = [
 export const ProjectData = [
   {
     in: 1,
-    text: "Featured Projects",
+    text: "- Featured Projects",
   },
 ];
 
@@ -151,7 +151,7 @@ export const ProjectDData = [
     websitei: <FaLink />,
     labelw: "Website",
     description:
-      "The Nigerian Food Database API is a RESTful API built with Flask-RESTful and PostgreSQL to provide information on various Nigerian dishes. Developers can access data on ingredients, nutritional value, and cooking instructions for each dish to build food-related applications and promote Nigerian cuisine..",
+      "The Nigerian Food Database API is a RESTful API built with Flask-RESTful and PostgreSQL to provide information on various Nigerian dishes.",
     img: "/img/ng-food=db-api.png",
   },
   {
@@ -193,7 +193,7 @@ export const BlogData = [
 export const TechnologiesData = [
   {
     in: 1,
-    heading: "Technologies",
+    heading: "- Technologies",
   },
 ];
 
@@ -287,9 +287,11 @@ export const TechnologiesDData = [
 export const ContactData = [
   {
     in: 1,
-    heading: "Contact",
+    heading: "- Contact",
     title: "Quick Reach / Socials",
     ticon: <MdFlashOn />,
+    logo: "/img/manchester-united-logo.png",
+    image: "/img/marcusrashford.png",
   },
 ];
 
@@ -329,5 +331,12 @@ export const contactSocialData = [
     label: "Twitter",
     icon: <FaTwitter />,
     link: "https://www.twitter.com/samdoghor",
+  },
+];
+
+export const FooterData = [
+  {
+    in: 1,
+    copyright: "All right reserved © Samuel Doghor 2023",
   },
 ];

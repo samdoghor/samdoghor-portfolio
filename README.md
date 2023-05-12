@@ -1,9 +1,17 @@
 # Hi there - marvo?👋🏿
 
-- 📫 How to reach me **talkto@samdoghor.com**
+- 📫 How to reach me **[mailto:talkto@samdoghor.com](talkto@samdoghor.com)**
 - ❤️ There is nothing I love to do better than `coding` 🌱
 
 My name is SAMUEL, DOGHOR I'm a passionate backend software engineer with a love for coding. You'll usually find me tapping away at my keyboard, crafting innovative solutions with code, but I also play around with frontend.
+
+## Live
+
+[My Portfolio](app.samdoghor.com)
+
+Built with [Vite-React](https://vitejs.dev/), [TailwindCSS](https://tailwindcss.com/) and hosted with [Vercel](https://vercel.com/).
+
+![My Portfolio](frontend/public/img/portfolio.png)
 
 ## Connect with me
 
@@ -11,10 +19,4 @@ My name is SAMUEL, DOGHOR I'm a passionate backend software engineer with a love
 [![Twitter Badge](https://img.shields.io/badge/-samdoghor-%09%23483D8B?style=for-the-badge&logo=twitter&logoColor=white&link=https://twitter.com/samdoghor)](https://twitter.com/samdoghor)
 [![Linkedin Badge](https://img.shields.io/badge/-samdoghor-%09%23483D8B?style=for-the-badge&logo=linkedin&logoColor=white&link=https://linkedin.com/in/samdoghor)](https://linkedin.com/in/samdoghor)
 
-## Github Cards
-
-| ![Streak Stats](https://github-readme-streak-stats.herokuapp.com/?user=samdoghor&) | ![Stats](https://github-readme-stats.vercel.app/api?username=samdoghor&show_icons=true&locale=en) |
-| ------------- | ------------- |
-
-| ![Stats](https://github-readme-stats.vercel.app/api/top-langs?username=samdoghor&show_icons=true&locale=en&layout=compact) |
-| ------------- |
+Attribution - Inspired by [Segun Adebayo](https://github.com/segunadebayo/adebayosegun.com)
