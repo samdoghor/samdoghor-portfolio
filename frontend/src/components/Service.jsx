@@ -4,7 +4,7 @@ import { ServiceData, headerSocialData } from "./Data";
 const Service = () => {
   return (
     <>
-      <div className="w-full grid lg:grid-cols-3 mt-44 min-h-full">
+      <div className="w-full grid lg:grid-cols-3 mt-24 min-h-full">
         <div className="col-span-2" data-aos="fade-right">
           <div>
             {ServiceData.map((d) => (

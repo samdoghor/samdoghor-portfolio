@@ -16,8 +16,7 @@ const Contact = () => {
             ))}
           </div>
           <div className="pt-10">
-            <div className="w-full grid lg:grid-cols-3">
-              <div className="lg:order-2 md:col-span-2"> </div>
+            <div className="w-full grid lg:grid-cols-2">
               <div>
                 <div>
                   {ContactData.map((d) => (
@@ -36,9 +35,42 @@ const Contact = () => {
                         href={d.link}
                         key={d.id}
                         target="_blank"
+                        data-aos="zoom-in"
                       >
                         {d.icon}
                         {d.label}
+                      </a>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <div>
+                <div>
+                  {ContactData.map((d) => (
+                    <div className="flex justify-center items-center gap-10 h-fit overflow-hidden pt-10 text-center">
+                      <a
+                        className="self-center  text-white font-semibold text-lg"
+                        data-aos="fade-up"
+                        data-aos-anchor-placement="center-bottom"
+                      >
+                        <img
+                          className="w-32 mb-8 rounded-full"
+                          alt="Samuel Doghor"
+                          src={d.logo}
+                        />
+                        Manchester United
+                      </a>
+                      <a
+                        className="self-center text-white font-semibold text-lg"
+                        data-aos="fade-up"
+                        data-aos-anchor-placement="center-bottom"
+                      >
+                        <img
+                          className="w-32 mb-8 self-center rounded-full"
+                          alt="Samuel Doghor"
+                          src={d.image}
+                        />
+                        Marcus Rashford
                       </a>
                     </div>
                   ))}
