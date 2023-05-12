@@ -16,7 +16,7 @@ const Contact = () => {
             ))}
           </div>
           <div className="pt-10">
-            <div className="w-full grid grid-cols-3">
+            <div className="w-full grid lg:grid-cols-3">
               <div className="lg:order-2 md:col-span-2"> </div>
               <div>
                 <div>
