@@ -17,6 +17,7 @@ import {
   DiDocker,
   DiDjango,
 } from "react-icons/di";
+import { MdFlashOn, MdMarkEmailRead, MdOutlineWhatsapp } from "react-icons/md";
 import FlaskOriginal from "react-devicons/flask/original-wordmark";
 import KubernetesPlain from "react-devicons/kubernetes/plain";
 import TypescriptPlain from "react-devicons/typescript/plain";
@@ -142,19 +143,32 @@ export const ProjectData = [
 export const ProjectDData = [
   {
     id: 1,
-    title: "MBS",
-    github: "htpps://www.github.com/samdoghor/mbs",
+    title: "Nigerian Food Database API",
+    github: "https://github.com/samdoghor/NG-food-DB-APIs",
     githubi: <FaGithub />,
     labelg: "Github",
     website: "#",
     websitei: <FaLink />,
     labelw: "Website",
     description:
-      "A sports betting app using Martingale with smart algorithms, limits, analytics, and security features for fewer losses and more wins.",
-    img: "/img/gomerce.png",
+      "The Nigerian Food Database API is a RESTful API built with Flask-RESTful and PostgreSQL to provide information on various Nigerian dishes. Developers can access data on ingredients, nutritional value, and cooking instructions for each dish to build food-related applications and promote Nigerian cuisine..",
+    img: "/img/ng-food=db-api.png",
   },
   {
     id: 2,
+    title: "Foodlogic",
+    github: "https://github.com/samdoghor/foodlogic",
+    githubi: <FaGithub />,
+    labelg: "Github",
+    website: "#",
+    websitei: <FaLink />,
+    labelw: "Website",
+    description:
+      "The app simplifies nutrition tracking, using tools such as calorie counters, nutrient trackers, and recipe calculators.",
+    img: "/img/foodlogic.png",
+  },
+  {
+    id: 3,
     title: "Gomerce",
     github: "https://github.com/samdoghor/GomerceBE",
     githubi: <FaGithub />,
@@ -267,5 +281,53 @@ export const TechnologiesDData = [
     label: "Flask",
     icon: <NodejsPlain color="#FFFFFF" />,
     category: "Runtime Env.",
+  },
+];
+
+export const ContactData = [
+  {
+    in: 1,
+    heading: "Contact",
+    title: "Quick Reach / Socials",
+    ticon: <MdFlashOn />,
+  },
+];
+
+export const contactSocialData = [
+  {
+    id: 1,
+    label: "Email",
+    icon: <MdMarkEmailRead />,
+    link: "mailto:talkto@samdoghor.com",
+  },
+  {
+    id: 2,
+    label: "WhatsApp",
+    icon: <MdOutlineWhatsapp />,
+    link: "https://wa.me/qr/CGHZ23GBYBKLC1",
+  },
+  {
+    id: 3,
+    label: "Instagram",
+    icon: <FaInstagramSquare />,
+    link: "https://www.instagram.com/samdoghor",
+  },
+  {
+    id: 4,
+    label: "Github",
+    icon: <FaGithub />,
+    link: "https://www.github.com/samdoghor",
+  },
+  {
+    id: 5,
+    label: "LinkedIn",
+    icon: <FaLinkedin />,
+    link: "https://www.linkedin.com/in/samdoghor",
+  },
+  {
+    id: 6,
+    label: "Twitter",
+    icon: <FaTwitter />,
+    link: "https://www.twitter.com/samdoghor",
   },
 ];

@@ -7,6 +7,8 @@ import {
   Project,
   Blog,
   Technologies,
+  Contact,
+  Footer,
 } from "./components/Index";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -24,6 +26,8 @@ const App = () => {
         <Project />
         {/* <Blog /> */}
         <Technologies />
+        <Contact />
+        <Footer />
       </div>
     </>
   );

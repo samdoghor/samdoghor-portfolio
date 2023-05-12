@@ -25,7 +25,7 @@ export default {
         ubuntu: ["Ubuntu", "sans-serif"],
       },
       borderWidth: {
-        d: "25px",
+        d: "15px",
       },
     },
   },

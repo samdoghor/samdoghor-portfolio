@@ -15,7 +15,7 @@ const Service = () => {
                     alt="Samuel Doghor"
                     src="/img/doghs.jpg"
                   />
-                  <span className="text-white items-center text-5xl md:text-7xl font-bold overflow-hidden lg:ps-4 leading-snug md:leading-relaxed tracking-widest font-hubballi">
+                  <span className="text-primary-cylogo items-center text-5xl md:text-7xl font-bold overflow-hidden lg:ps-4 leading-snug md:leading-relaxed tracking-widest font-hubballi">
                     {d.service2}
                   </span>
                 </p>
