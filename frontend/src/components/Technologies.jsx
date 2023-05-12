@@ -4,7 +4,7 @@ import { TechnologiesData, TechnologiesDData } from "./Data";
 const Technologies = () => {
   return (
     <>
-      <div className="w-full mt-40 min-h-full overflow-hidden">
+      <div className="w-full mt-28 min-h-full overflow-hidden">
         <div data-aos="flip-down">
           {TechnologiesData.map((d) => (
             <div>
@@ -20,7 +20,7 @@ const Technologies = () => {
             className="grid lg:grid-cols-8 md:grid-cols-5 grid-cols-3"
           >
             {TechnologiesDData.map((d) => (
-              <div className="overflow-hidden rounded-2xl drop-shadow-md hover:animate-pulse">
+              <div className="overflow-hidden rounded-2xl drop-shadow-md hover:animate-pulse hover:cursor-pointer">
                 <div key={d.id}>
                   <div className="grid text-4xl text-white font-nova tracking-wider overflow-hidden font-bold p-2 justify-items-center">
                     <span className="text-center"> {d.icon} </span>

@@ -4,7 +4,7 @@ import { ProjectData, ProjectDData } from "./Data";
 const Project = () => {
   return (
     <>
-      <div className="w-full mt-40 lg:mt-44 min-h-full overflow-hidden">
+      <div className="w-full mt-28 lg:mt-44 min-h-full overflow-hidden">
         <div data-aos="flip-down">
           {ProjectData.map((d) => (
             <p className="text-primary-cylogo font-semibold text-6xl overflow-hidden leading-snug md:leading-normal">
@@ -39,7 +39,7 @@ const Project = () => {
               <div className="w-full">
                 <div className="flex place-content-center">
                   <img
-                    className="flex w-full lg:w-4/6 h-3/6 rounded-[30px] mb-8 place-self-center border-t-d border-l-d border-primary-ylogo"
+                    className="flex w-full lg:w-4/6 h-3/6 rounded-[30px] mb-8 place-self-center border-t-d border-l-d border-primary-blogo"
                     alt="Samuel Doghor"
                     src={d.img}
                   />
