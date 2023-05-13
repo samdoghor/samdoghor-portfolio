@@ -24,6 +24,8 @@ import TypescriptPlain from "react-devicons/typescript/plain";
 import NodejsPlain from "react-devicons/nodejs/plain";
 import Typewriter from "react-ts-typewriter";
 
+const currentYear = new Date().getFullYear();
+
 // Header
 
 export const headerLogoData = [
@@ -337,6 +339,7 @@ export const contactSocialData = [
 export const FooterData = [
   {
     in: 1,
-    copyright: "All right reserved © Samuel Doghor 2023",
+    copyright: "All right reserved © Samuel Doghor ",
+    year: currentYear,
   },
 ];
