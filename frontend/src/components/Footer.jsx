@@ -9,7 +9,7 @@ const Footer = () => {
           {FooterData.map((d) => (
             <div>
               <div className="text-white text-center text-lg">
-                {d.copyright}
+                {d.copyright} {d.year}
               </div>
             </div>
           ))}
