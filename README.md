@@ -7,9 +7,9 @@ My name is SAMUEL, DOGHOR I'm a passionate backend software engineer with a love
 
 ## Live
 
-[My Portfolio](app.samdoghor.com)
+[My Portfolio](https://app.samdoghor.com){:target="_blank" rel="noopener"}
 
-Built with [Vite-React](https://vitejs.dev/), [TailwindCSS](https://tailwindcss.com/) and hosted with [Vercel](https://vercel.com/).
+Built with [Vite-React](https://vitejs.dev/){:target="_blank" rel="noopener"}, [TailwindCSS](https://tailwindcss.com/){:target="_blank" rel="noopener"} and hosted with [Vercel](https://vercel.com/){:target="_blank" rel="noopener"}.
 
 ![My Portfolio](frontend/public/img/portfolio.png)
 
