@@ -1,4 +1,4 @@
-# Hi there - marvo?👋🏿
+# Hi there 👋🏿
 
 - 📫 How to reach me **[mailto:talkto@samdoghor.com](talkto@samdoghor.com)**
 - ❤️ There is nothing I love to do better than `coding` 🌱
@@ -7,9 +7,9 @@ My name is SAMUEL, DOGHOR I'm a passionate backend software engineer with a love
 
 ## Live
 
-[My Portfolio](https://app.samdoghor.com){:target="_blank" rel="noopener"}
+[My Portfolio](https://app.samdoghor.com)
 
-Built with [Vite-React](https://vitejs.dev/){:target="_blank" rel="noopener"}, [TailwindCSS](https://tailwindcss.com/){:target="_blank" rel="noopener"} and hosted with [Vercel](https://vercel.com/){:target="_blank" rel="noopener"}.
+Built with [Vite-React](https://vitejs.dev/), [TailwindCSS](https://tailwindcss.com/) and hosted with [Vercel](https://vercel.com/).
 
 ![My Portfolio](frontend/public/img/portfolio.png)
 
@@ -19,4 +19,6 @@ Built with [Vite-React](https://vitejs.dev/){:target="_blank" rel="noopener"}, [
 [![Twitter Badge](https://img.shields.io/badge/-samdoghor-%09%23483D8B?style=for-the-badge&logo=twitter&logoColor=white&link=https://twitter.com/samdoghor)](https://twitter.com/samdoghor)
 [![Linkedin Badge](https://img.shields.io/badge/-samdoghor-%09%23483D8B?style=for-the-badge&logo=linkedin&logoColor=white&link=https://linkedin.com/in/samdoghor)](https://linkedin.com/in/samdoghor)
 
-Attribution - Inspired by [Segun Adebayo](https://github.com/segunadebayo/adebayosegun.com)
+## Attribution
+
+Inspired by [Segun Adebayo](https://github.com/segunadebayo/adebayosegun.com)
