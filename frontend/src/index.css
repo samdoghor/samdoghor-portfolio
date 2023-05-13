@@ -21,3 +21,26 @@ body::-webkit-scrollbar-thumb {
   background-color: #1e3552;
   outline: .1px solid #1e3552;
 }
+
+.sticky-nav {
+  position: fixed;
+  width: 80vw;
+  z-index: 2 !important;
+  overflow-y: hidden;
+  background-color: rgba(15, 26, 41, 0.95);
+}
+.sticky-nav .dropdown-menu-o {
+  z-index: 3 !important;
+  position: fixed;
+  display: block;
+  right: 12%;
+  border-radius: 5px;
+  background-color: white;
+  padding: 2px;
+}
+.ontop {
+  z-index: 2;
+}
+.ontop-2x {
+  z-index: 4;
+}
