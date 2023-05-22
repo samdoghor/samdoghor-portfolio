@@ -1,6 +1,6 @@
 # Hi there 👋🏿
 
-- 📫 How to reach me **[mailto:talkto@samdoghor.com](talkto@samdoghor.com)**
+- 📫 How to reach me **[talkto@samdoghor.com](mailto:talkto@samdoghor.com)**
 - ❤️ There is nothing I love to do better than `coding` 🌱
 
 My name is SAMUEL, DOGHOR I'm a passionate backend software engineer with a love for coding. You'll usually find me tapping away at my keyboard, crafting innovative solutions with code, but I also play around with frontend.
