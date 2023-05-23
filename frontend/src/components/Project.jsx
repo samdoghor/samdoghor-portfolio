@@ -4,7 +4,10 @@ import { ProjectData, ProjectDData } from "./Data";
 const Project = () => {
   return (
     <>
-      <div className="w-full mt-28 lg:mt-44 min-h-full overflow-hidden">
+      <div
+        className="w-full pt-28 lg:pt-44 min-h-full overflow-hidden"
+        id="projects"
+      >
         <div data-aos="flip-down">
           {ProjectData.map((d) => (
             <p className="text-primary-cylogo font-semibold text-6xl overflow-hidden leading-snug md:leading-normal">

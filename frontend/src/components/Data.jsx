@@ -46,18 +46,18 @@ export const headerNavData = [
   },
   {
     id: 2,
-    nav: "[About]",
-    link: "#about",
-  },
-  {
-    id: 3,
     nav: "[Projects]",
     link: "#projects",
   },
   {
-    id: 4,
+    id: 3,
     nav: "[Blog]",
     link: "#blog",
+  },
+  {
+    id: 4,
+    nav: "[Stack]",
+    link: "#stack",
   },
   {
     id: 5,
@@ -134,6 +134,8 @@ export const TestimoniesData = [
     id: 1,
   },
 ];
+
+// Projects
 
 export const ProjectData = [
   {

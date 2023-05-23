@@ -7,6 +7,7 @@ import Blog from "./Blog";
 import Technologies from "./Technologies";
 import Contact from "./Contact";
 import Footer from "./Footer";
+import ScrollToTop from "./ScrollToTop";
 
 export {
   Header,
@@ -18,4 +19,5 @@ export {
   Technologies,
   Contact,
   Footer,
+  ScrollToTop,
 };
