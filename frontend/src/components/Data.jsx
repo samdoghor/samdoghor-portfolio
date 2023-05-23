@@ -147,42 +147,42 @@ export const ProjectData = [
 export const ProjectDData = [
   {
     id: 1,
-    title: "Nigerian Food Database API",
-    github: "https://github.com/samdoghor/NG-food-DB-APIs",
+    Title: "Nigerian Food Database API",
+    Github: "https://github.com/samdoghor/NG-food-DB-APIs",
     githubi: <FaGithub />,
     labelg: "Github",
-    website: "#",
+    Website: "#",
     websitei: <FaLink />,
     labelw: "Website",
-    description:
+    Description:
       "The Nigerian Food Database API is a RESTful API built with Flask-RESTful and PostgreSQL to provide information on various Nigerian dishes.",
-    img: "/img/ng-food=db-api.png",
+    Image: "/img/ng-food=db-api.png",
   },
   {
     id: 2,
-    title: "Foodlogic",
-    github: "https://github.com/samdoghor/foodlogic",
+    Title: "Foodlogic",
+    Github: "https://github.com/samdoghor/foodlogic",
     githubi: <FaGithub />,
     labelg: "Github",
-    website: "#",
+    Website: "#",
     websitei: <FaLink />,
     labelw: "Website",
-    description:
+    Description:
       "The app simplifies nutrition tracking, using tools such as calorie counters, nutrient trackers, and recipe calculators.",
-    img: "/img/foodlogic.png",
+    Image: "/img/foodlogic.png",
   },
   {
     id: 3,
-    title: "Gomerce",
-    github: "https://github.com/samdoghor/GomerceBE",
+    Title: "Gomerce",
+    Github: "https://github.com/samdoghor/GomerceBE",
     githubi: <FaGithub />,
     labelg: "Github",
-    website: "#",
+    Website: "#",
     websitei: <FaLink />,
     labelw: "Website",
-    description:
+    Description:
       "E-commerce app enhanced with JWT authentication, SqlAlchemy, **SQLite** persistence and deployment scripts via Docker. It has all the ready-to-use bare minimum essentials.",
-    img: "/img/gomerce.png",
+    Image: "/img/gomerce.png",
   },
 ];
 

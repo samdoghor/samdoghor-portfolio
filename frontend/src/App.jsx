@@ -29,7 +29,7 @@ const App = () => {
         {/* <Testimonies /> */}
         <Contact />
         <Footer />
-        {/* <ScrollToTop /> */}
+        <ScrollToTop />
       </div>
     </>
   );
