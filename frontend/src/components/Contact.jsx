@@ -4,7 +4,10 @@ import { ContactData, contactSocialData } from "./Data";
 const Contact = () => {
   return (
     <>
-      <div className="w-full mt-28 min-h-full overflow-hidden">
+      <div
+        className="w-full pt-28 lg:pt-44 min-h-full overflow-hidden"
+        id="contact"
+      >
         <div>
           <div data-aos="flip-down">
             {ContactData.map((d) => (

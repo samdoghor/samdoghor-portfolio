@@ -9,6 +9,7 @@ import {
   Technologies,
   Contact,
   Footer,
+  ScrollToTop,
 } from "./components/Index";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -22,12 +23,13 @@ const App = () => {
         <Header />
         <Hero />
         <Service />
-        {/* <Testimonies /> */}
         <Project />
         {/* <Blog /> */}
         <Technologies />
+        {/* <Testimonies /> */}
         <Contact />
         <Footer />
+        {/* <ScrollToTop /> */}
       </div>
     </>
   );

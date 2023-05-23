@@ -4,7 +4,10 @@ import { TechnologiesData, TechnologiesDData } from "./Data";
 const Technologies = () => {
   return (
     <>
-      <div className="w-full mt-28 min-h-full overflow-hidden">
+      <div
+        className="w-full pt-28 lg:pt-44 min-h-full overflow-hidden"
+        id="stack"
+      >
         <div data-aos="flip-down">
           {TechnologiesData.map((d) => (
             <div>

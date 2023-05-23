@@ -78,3 +78,20 @@ class Tag(db.Model):
 
     def __repr__(self):
         return f'Category(id={self.id}, name={self.name})'
+
+
+class Project(db.Model):
+    """ This class defines the projects executed model """
+
+    __tablename___ = "projects"
+
+    id = db.Column(db.Integer, primary_key=True)
+    title = db.Column(db.String(), nullable=False)
+    github = db.Column(db.String(), nullable=True)
+    website = db.Column(db.String(), nullable=True)
+    description = db.Column(db.String(), nullable=True)
+    image = db.Column(db.String(), nullable=True)
+    featured = db.Column(db.Boolean(), nullable=False, default=False)
+
+    created_at = db.Column(db.DateTime, default=datetime.now())
+    updated_at = db.Column(db.DateTime, onupdate=datetime.now())
