@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { FaChevronCircleUp } from "react-icons/fa";
 
 const ScrollToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -6,7 +7,7 @@ const ScrollToTop = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.pageYOffset;
-      const shouldShowButton = scrollTop > 100; // Adjust the scroll position threshold as needed
+      const shouldShowButton = scrollTop > 300; // Adjust the scroll position threshold as needed
       setIsVisible(shouldShowButton);
     };
 
@@ -25,7 +26,7 @@ const ScrollToTop = () => {
       className={`scroll-to-top-button ${isVisible ? "visible" : ""}`}
       onClick={scrollToTop}
     >
-      Scroll to Top
+      <FaChevronCircleUp />
     </button>
   );
 };

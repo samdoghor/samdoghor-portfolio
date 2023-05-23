@@ -6,6 +6,7 @@ Samuel Doghor Portfolio Backend
 
 from flask import Flask, jsonify
 from flask_migrate import Migrate
+from flask_cors import CORS
 
 from models import db, Project
 import config
@@ -13,6 +14,7 @@ import config
 # configurations
 
 app = Flask(__name__)
+cors = CORS(app, resources={r"/*": {"origins": "http://localhost:5173"}})
 app.config['SECRET_KEY'] = config.SECRET_KEY
 
 app.debug = config.DEBUG
@@ -36,7 +38,7 @@ def index():
     }), 200
 
 
-@app.route("/projects")
+@app.route("/projects-create",  methods=['POST'])
 def project_create(title, github, website, description, image, featured):
     """ This function is use to create project """
 
@@ -50,7 +52,7 @@ def project_create(title, github, website, description, image, featured):
     }), 200
 
 
-@app.route("/projects")
+@app.route("/projects",  methods=['GET'])
 def project_view():
     """ This function is use to view all projects """
     projects = Project.query.filter_by(featured=True).all()
@@ -67,9 +69,7 @@ def project_view():
             "Featured": proj.featured
         })
 
-    return jsonify({
-        "Projects": project
-    }), 200
+    return jsonify({"Projects": project}), 200
 
 
 # run
