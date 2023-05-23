@@ -24,3 +24,4 @@ typing_extensions
 virtualenv
 virtualenv-clone
 Werkzeug
+gunicorn
