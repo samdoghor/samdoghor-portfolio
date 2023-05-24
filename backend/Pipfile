@@ -11,6 +11,8 @@ psycopg2 = "*"
 flask-migrate = "*"
 flask-cors = "*"
 gunicorn = "*"
+flask-compress = "*"
+flask-caching = "*"
 
 [dev-packages]
 

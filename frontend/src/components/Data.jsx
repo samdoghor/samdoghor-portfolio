@@ -141,6 +141,9 @@ export const ProjectData = [
   {
     in: 1,
     text: "- Featured Projects",
+    code1: (
+      <Typewriter loop={true} speed={100} delay={2000} text=" Loading... " />
+    ),
   },
 ];
 
@@ -148,7 +151,7 @@ export const ProjectDData = [
   {
     id: 1,
     Title: "Nigerian Food Database API",
-    Github: "https://github.com/samdoghor/NG-food-DB-APIs",
+    GitHub: "https://github.com/samdoghor/NG-food-DB-APIs",
     githubi: <FaGithub />,
     labelg: "Github",
     Website: "#",
@@ -161,7 +164,7 @@ export const ProjectDData = [
   {
     id: 2,
     Title: "Foodlogic",
-    Github: "https://github.com/samdoghor/foodlogic",
+    GitHub: "https://github.com/samdoghor/foodlogic",
     githubi: <FaGithub />,
     labelg: "Github",
     Website: "#",
@@ -174,7 +177,7 @@ export const ProjectDData = [
   {
     id: 3,
     Title: "Gomerce",
-    Github: "https://github.com/samdoghor/GomerceBE",
+    GitHub: "https://github.com/samdoghor/GomerceBE",
     githubi: <FaGithub />,
     labelg: "Github",
     Website: "#",
@@ -189,7 +192,7 @@ export const ProjectDData = [
 export const BlogData = [
   {
     in: 1,
-    text: "Featured Blog",
+    text: "- Featured Blog",
     cs: "Coming Soon!",
   },
 ];
