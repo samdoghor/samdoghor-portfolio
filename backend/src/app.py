@@ -14,7 +14,7 @@ import config
 # configurations
 
 app = Flask(__name__)
-cors = CORS(app, resources={r"/*": {"origins": "http://localhost:5173"}})
+cors = CORS(app, resources={r"/*": {"origins": ["http://localhost:5173", "https://samdoghor-portfolio-backend.onrender.com"]}})  # noqa: E501
 app.config['SECRET_KEY'] = config.SECRET_KEY
 
 app.debug = config.DEBUG
