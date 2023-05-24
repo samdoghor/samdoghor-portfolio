@@ -4,17 +4,22 @@ Samuel Doghor Portfolio Backend
 
 # imports
 
-from flask import Flask, jsonify
-from flask_migrate import Migrate
-from flask_cors import CORS
-
-from models import db, Project
 import config
+from flask import Flask, jsonify
+from flask_caching import Cache
+from flask_compress import Compress
+from flask_cors import CORS
+from flask_migrate import Migrate
+from models import Project, db
 
 # configurations
 
+cache = Cache()
+
 app = Flask(__name__)
-cors = CORS(app, resources={r"/*": {"origins": ["http://localhost:5173", "https://app.samdoghor.com", "https://www.app.samdoghor.com"]}})  # noqa: E501
+
+cors = CORS(app, resources={r"/*": {"origins": ["http://localhost:5173", "https://app.samdoghor.com", "https://www.app.samdoghor.com", "app.samdoghor.com", "www.app.samdoghor.com"]}})  # noqa: E501
+
 app.config['SECRET_KEY'] = config.SECRET_KEY
 
 app.debug = config.DEBUG
@@ -25,6 +30,11 @@ db.init_app(app)
 db.app = app
 
 migrate = Migrate(app, db)
+
+Compress(app)
+# Cache expiration time set to 1 week
+cache.init_app(app, config={'CACHE_TYPE': 'simple',
+               'CACHE_DEFAULT_TIMEOUT': 604800})
 
 
 # routes
@@ -39,6 +49,7 @@ def index():
 
 
 @app.route("/projects-create",  methods=['POST'])
+@cache.cached()
 def project_create(title, github, website, description, image, featured):
     """ This function is use to create project """
 
