@@ -55,7 +55,8 @@ def project_create(title, github, website, description, image, featured):
 @app.route("/projects",  methods=['GET'])
 def project_view():
     """ This function is use to view all projects """
-    projects = Project.query.filter_by(featured=True).all()
+    projects = Project.query.filter_by(
+        featured=True).order_by(Project.id.asc()).all()
 
     project = []
 
