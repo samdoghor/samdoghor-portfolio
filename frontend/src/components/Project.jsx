@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { ProjectData, ProjectDData } from "./Data";
+import { ProjectData } from "./Data";
 import { FaGithub, FaLink } from "react-icons/fa";
 import axios from "axios";
 
@@ -7,13 +7,15 @@ const Project = () => {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    axios.get("http://127.0.0.1:5000/projects").then((response) => {
-      if (response.status === 200) {
-        setProjects(response.data.Projects);
-      } else {
-        console.error("Error fetching projects:", response.status);
-      }
-    });
+    axios
+      .get("https://samdoghor-portfolio-backend.onrender.com/projects")
+      .then((response) => {
+        if (response.status === 200) {
+          setProjects(response.data.Projects);
+        } else {
+          console.error("Error fetching projects:", response.status);
+        }
+      });
   }, []);
 
   return (
@@ -30,7 +32,7 @@ const Project = () => {
           ))}
         </div>
         <div className="overflow-hidden drop-shadow-xl pt-16">
-          {ProjectDData.map((project, index) => (
+          {projects.map((project, index) => (
             <div
               className="w-full grid lg:grid-cols-2 pb-12"
               data-aos="zoom-out"
