@@ -64,6 +64,7 @@ def project_create(title, github, website, description, image, featured):
 
 
 @app.route("/projects",  methods=['GET'])
+@cache.cached()
 def project_view():
     """ This function is use to view all projects """
     projects = Project.query.filter_by(
