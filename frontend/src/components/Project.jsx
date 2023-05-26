@@ -9,7 +9,8 @@ const Project = () => {
 
   useEffect(() => {
     axios
-      .get("https://samdoghor-portfolio-backend.onrender.com/projects")
+      .get("https://samdoghor-portfolio-backend.vercel.app/projects")
+      // .get("https://samdoghor-portfolio-backend.onrender.com/projects")
       // .get("http://127.0.0.1:5000/projects")
       .then((response) => {
         if (response.status === 200) {
