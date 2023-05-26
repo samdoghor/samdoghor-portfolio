@@ -8,44 +8,23 @@ const Project = () => {
   const [isLoading, setIsLoading] = useState(true); // Add loading state
 
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response1 = await axios.get(
-          "https://samdoghor-portfolio-backend.vercel.app/projects"
-        );
-        const response2 = await axios.get(
-          "https://samdoghor-portfolio-backend.onrender.com/projects"
-        );
-
-        if (response1.status === 200) {
-          setProjects(response1.data.Projects);
+    axios
+      // .get("https://samdoghor-portfolio-backend.vercel.app/projects")
+      .get("https://samdoghor-portfolio-backend.onrender.com/projects")
+      // .get("http://127.0.0.1:5000/projects")
+      .then((response) => {
+        if (response.status === 200) {
+          setProjects(response.data.Projects);
         } else {
-          console.error(
-            "Error fetching projects from Vercel:",
-            response1.status
-          );
+          console.error("Error fetching projects:", response.status);
         }
-
-        if (response2.status === 200) {
-          // Merge or append the data from response2 with existing projects
-          setProjects((prevProjects) => [
-            ...prevProjects,
-            ...response2.data.Projects,
-          ]);
-        } else {
-          console.error(
-            "Error fetching projects from Render:",
-            response2.status
-          );
-        }
-      } catch (error) {
+      })
+      .catch((error) => {
         console.error("Error fetching projects:", error);
-      } finally {
+      })
+      .finally(() => {
         setIsLoading(false);
-      }
-    };
-
-    fetchData();
+      });
   }, []);
 
   if (isLoading) {
