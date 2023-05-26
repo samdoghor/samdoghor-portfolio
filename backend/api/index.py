@@ -84,8 +84,21 @@ def project_view():
 
     return jsonify({"Projects": project}), 200
 
+# Error handler for all exceptions
+
+
+@app.errorhandler(Exception)
+def handle_exception(error):
+
+    # Return a JSON response with an error message
+    response = {
+        "message": "An error occurred",
+        "error": str(error)
+    }
+    return jsonify(response), 500
 
 # run
+
 
 if __name__ == "__main__":
     app.debug = Config.DEBUG
