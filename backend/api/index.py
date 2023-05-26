@@ -4,7 +4,7 @@ Samuel Doghor Portfolio Backend
 
 # imports
 
-import config
+from config import SQLALCHEMY_DATABASE_URI, SECRET_KEY, DEBUG, SQLALCHEMY_TRACK_MODIFICATIONS  # noqa: E501
 from flask import Flask, jsonify
 from flask_caching import Cache
 from flask_compress import Compress
@@ -20,11 +20,11 @@ app = Flask(__name__)
 
 cors = CORS(app, resources={r"/*": {"origins": ["http://localhost:5173", "https://app.samdoghor.com", "https://www.app.samdoghor.com", "app.samdoghor.com", "www.app.samdoghor.com"]}})  # noqa: E501
 
-app.config['SECRET_KEY'] = config.SECRET_KEY
+app.config['SECRET_KEY'] = SECRET_KEY
 
-app.debug = config.DEBUG
-app.config["SQLALCHEMY_DATABASE_URI"] = config.SQLALCHEMY_DATABASE_URI
-app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = config.SQLALCHEMY_TRACK_MODIFICATIONS  # noqa: E501
+app.debug = DEBUG
+app.config["SQLALCHEMY_DATABASE_URI"] = SQLALCHEMY_DATABASE_URI
+app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = SQLALCHEMY_TRACK_MODIFICATIONS  # noqa: E501
 
 db.init_app(app)
 db.app = app
@@ -87,5 +87,5 @@ def project_view():
 # run
 
 if __name__ == "__main__":
-    app.debug = config.DEBUG
+    app.debug = DEBUG
     app.run()
