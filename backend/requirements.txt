@@ -21,7 +21,8 @@ Mako
 MarkupSafe          
 pipenv          
 platformdirs          
-psycopg2          
+# psycopg2  
+pg8000        
 python-dotenv          
 six          
 SQLAlchemy          
