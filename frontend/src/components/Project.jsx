@@ -27,6 +27,36 @@ const Project = () => {
       });
   }, []);
 
+  useEffect(() => {
+    const fetchData = () => {
+      axios
+        // .get("https://samdoghor-portfolio-backend.vercel.app/projects")
+        .get("https://samdoghor-portfolio-backend.onrender.com/projects")
+        // .get("http://127.0.0.1:5000/projects")
+        .then((response) => {
+          if (response.status === 200) {
+            setProjects(response.data.Projects);
+          } else {
+            console.error("Error fetching projects:", response.status);
+          }
+        })
+        .catch((error) => {
+          console.error("Error fetching projects:", error);
+        })
+        .finally(() => {
+          setIsLoading(false);
+        });
+    };
+
+    fetchData(); // Initial fetch
+
+    const interval = setInterval(fetchData, 10 * 60 * 1000); // Fetch every 10 minutes
+
+    return () => {
+      clearInterval(interval); // Clean up interval on component unmount
+    };
+  }, []);
+
   if (isLoading) {
     // Render loading indicator or placeholder content while loading
     return (
