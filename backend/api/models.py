@@ -48,7 +48,9 @@ class Blog(db.Model):
 
     id = db.Column(db.Integer, primary_key=True)
     title = db.Column(db.String())
-    content = db.Column(db.String())
+    short_content = db.Column(db.Text())
+    content = db.Column(db.Text())
+    featured = db.Column(db.Boolean(), nullable=False, default=False)
 
     created_at = db.Column(db.DateTime, default=datetime.now())
     updated_at = db.Column(db.DateTime, onupdate=datetime.now())

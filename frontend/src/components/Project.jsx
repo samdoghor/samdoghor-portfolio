@@ -7,25 +7,25 @@ const Project = () => {
   const [projects, setProjects] = useState([]);
   const [isLoading, setIsLoading] = useState(true); // Add loading state
 
-  useEffect(() => {
-    axios
-      // .get("https://samdoghor-portfolio-backend.vercel.app/projects")
-      .get("https://samdoghor-portfolio-backend.onrender.com/projects")
-      // .get("http://127.0.0.1:5000/projects")
-      .then((response) => {
-        if (response.status === 200) {
-          setProjects(response.data.Projects);
-        } else {
-          console.error("Error fetching projects:", response.status);
-        }
-      })
-      .catch((error) => {
-        console.error("Error fetching projects:", error);
-      })
-      .finally(() => {
-        setIsLoading(false);
-      });
-  }, []);
+  // useEffect(() => {
+  //   axios
+  //     // .get("https://samdoghor-portfolio-backend.vercel.app/projects")
+  //     .get("https://samdoghor-portfolio-backend.onrender.com/projects")
+  //     // .get("http://127.0.0.1:5000/projects")
+  //     .then((response) => {
+  //       if (response.status === 200) {
+  //         setProjects(response.data.Projects);
+  //       } else {
+  //         console.error("Error fetching projects:", response.status);
+  //       }
+  //     })
+  //     .catch((error) => {
+  //       console.error("Error fetching projects:", error);
+  //     })
+  //     .finally(() => {
+  //       setIsLoading(false);
+  //     });
+  // }, []);
 
   useEffect(() => {
     const fetchData = () => {
@@ -73,7 +73,7 @@ const Project = () => {
   return (
     <>
       <div
-        className="w-full pt-28 lg:pt-44 min-h-full overflow-hidden"
+        className="w-full pt-28 lg:pt-32 min-h-full overflow-hidden border-t-2 border-primary-bnlogo mt-28"
         id="projects"
       >
         <div data-aos="flip-down">

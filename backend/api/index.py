@@ -4,13 +4,14 @@ Samuel Doghor Portfolio Backend
 
 # imports
 
-from config import Config  # noqa: E501
 from flask import Flask, jsonify
 from flask_caching import Cache
 from flask_compress import Compress
 from flask_cors import CORS
 from flask_migrate import Migrate
-from models import Project, db
+
+from .config import Config
+from .models import Project, db, Blog
 
 # configurations
 
@@ -83,6 +84,26 @@ def project_view():
         })
 
     return jsonify({"Projects": project}), 200
+
+
+@app.route("/blogs",  methods=['GET'])
+@cache.cached()
+def blog_view():
+    """ This function is use to view all blogs """
+    blogs = Blog.query.filter_by(featured=True).order_by(
+        Blog.created_at.desc()).all()
+
+    blog = []
+
+    for blo in blogs:
+        blog.append({
+            "Title": blo.title,
+            "Short Content": blo.short_content,
+            "Content": blo.content,
+            "Author": blo.authors.last_name + " " + blo.authors.first_name,
+        })
+
+    return jsonify({"Blogs": blog}), 200
 
 # Error handler for all exceptions
 

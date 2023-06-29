@@ -5,7 +5,7 @@ const Blog = () => {
   return (
     <>
       <div
-        className="w-full pt-28 lg:pt-44 min-h-full overflow-hidden"
+        className="w-full pt-28 lg:pt-32 min-h-full overflow-hidden border-t-2 border-primary-bnlogo mt-28"
         id="blog"
       >
         <div data-aos="flip-down">
