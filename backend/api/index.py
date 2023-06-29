@@ -10,8 +10,8 @@ from flask_compress import Compress
 from flask_cors import CORS
 from flask_migrate import Migrate
 
-from .config import Config
-from .models import Project, db, Blog
+from config import Config
+from models import Project, db, Blog
 
 # configurations
 
