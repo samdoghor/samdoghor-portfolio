@@ -5,7 +5,7 @@ const Service = () => {
   return (
     <>
       <div
-        className="w-full grid lg:grid-cols-3 pt-24 lg:pt-44 min-h-full"
+        className="w-full grid lg:grid-cols-3 pt-24 lg:pt-32 mt-28 min-h-full border-t-2 border-primary-bnlogo"
         id="services"
       >
         <div className="col-span-2" data-aos="fade-right">
