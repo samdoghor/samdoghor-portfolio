@@ -110,6 +110,7 @@ def blog_view():
 
 @app.errorhandler(Exception)
 def handle_exception(error):
+    """ Handles all errors """
 
     # Return a JSON response with an error message
     response = {
@@ -123,4 +124,4 @@ def handle_exception(error):
 
 if __name__ == "__main__":
     app.debug = Config.DEBUG
-    app.run()
+    # app.run()
