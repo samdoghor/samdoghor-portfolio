@@ -124,4 +124,4 @@ def handle_exception(error):
 
 if __name__ == "__main__":
     app.debug = Config.DEBUG
-    # app.run()
+    app.run()
