@@ -1,4 +1,3 @@
-import React from "react";
 import { TestimoniesData } from "./Data";
 
 const Testimonies = () => {
@@ -6,7 +5,7 @@ const Testimonies = () => {
     <>
       <div>
         {TestimoniesData.map((d) => (
-          <div> {d.id} </div>
+          <div key={d.id}> {d.id} </div>
         ))}
       </div>
     </>

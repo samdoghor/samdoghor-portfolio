@@ -1,4 +1,3 @@
-import React from "react";
 import { HeroData } from "./Data";
 
 const Hero = () => {
@@ -17,7 +16,7 @@ const Hero = () => {
           data-aos="fade-right"
         >
           {HeroData.map((d) => (
-            <span>
+            <span key={d.id}>
               <p className="text-primary-ylogo font-black text-7xl md:overflow-hidden pb-10 pt-8 md:pt-16 overflow-hidden">
                 {d.name}
               </p>

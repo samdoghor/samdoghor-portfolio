@@ -1,7 +1,7 @@
 import { Avatar, Dropdown, Navbar } from "flowbite-react";
 import { headerLogoData, headerNavData, headerSocialData } from "./Data";
 import ProfileImage from "/img/doghs.jpg";
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 const Header = () => {
   const [stickyClass, setStickyClass] = useState("");
