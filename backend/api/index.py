@@ -4,14 +4,12 @@ Samuel Doghor Portfolio Backend
 
 # imports
 
+from components import Blog, Config, Project, db
 from flask import Flask, jsonify
 from flask_caching import Cache
 from flask_compress import Compress
 from flask_cors import CORS
 from flask_migrate import Migrate
-
-from components import Config
-from components import Project, db, Blog
 
 # configurations
 
