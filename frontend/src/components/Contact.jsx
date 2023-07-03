@@ -1,17 +1,16 @@
-import React from "react";
 import { ContactData, contactSocialData } from "./Data";
 
 const Contact = () => {
   return (
     <>
       <div
-        className="w-full pt-28 lg:pt-32 min-h-full overflow-hidden border-t-2 border-primary-bnlogo mt-28"
+        className="w-full pt-28 lg:pt-32 min-h-full overflow-hidden mt-28"
         id="contact"
       >
         <div>
           <div data-aos="flip-down">
             {ContactData.map((d) => (
-              <div>
+              <div key={d.id}>
                 <p className="text-primary-cylogo font-semibold text-5xl md:text-6xl overflow-hidden leading-snug md:leading-normal">
                   {d.heading}
                 </p>
@@ -23,7 +22,7 @@ const Contact = () => {
               <div>
                 <div>
                   {ContactData.map((d) => (
-                    <div>
+                    <div key={d.id}>
                       <p className="flex  text-primary-ylogo text-2xl align-middle gap-4">
                         {d.ticon} {d.title}
                       </p>
@@ -32,12 +31,13 @@ const Contact = () => {
                 </div>
                 <div className="grid grid-cols-2 grid-rows-2 mt-6">
                   {contactSocialData.map((d) => (
-                    <div>
+                    <div key={d.id}>
                       <a
                         className="flex text-lg text-white items-center gap-2 mt-6"
                         href={d.link}
                         key={d.id}
                         target="_blank"
+                        rel="noreferrer"
                         data-aos="zoom-in"
                       >
                         {d.icon}
@@ -50,7 +50,10 @@ const Contact = () => {
               <div>
                 <div>
                   {ContactData.map((d) => (
-                    <div className="flex justify-center items-center gap-10 h-fit overflow-hidden pt-10 text-center">
+                    <div
+                      key={d.id}
+                      className="flex justify-center items-center gap-10 h-fit overflow-hidden pt-10 text-center"
+                    >
                       <a
                         className="self-center  text-white font-semibold text-lg"
                         data-aos="fade-up"

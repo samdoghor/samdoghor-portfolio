@@ -1,4 +1,3 @@
-import React from "react";
 import { FooterData } from "./Data";
 
 const Footer = () => {
@@ -7,7 +6,7 @@ const Footer = () => {
       <div className="w-full mt-28 mb-5 min-h-full overflow-hidden border-t-2 border-primary-blogo pt-4">
         <div>
           {FooterData.map((d) => (
-            <div>
+            <div key={d.id}>
               <div className="text-white text-center text-lg">
                 {d.copyright} {d.year}
               </div>

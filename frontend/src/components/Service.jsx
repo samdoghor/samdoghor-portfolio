@@ -1,17 +1,16 @@
-import React from "react";
 import { ServiceData, headerSocialData } from "./Data";
 
 const Service = () => {
   return (
     <>
       <div
-        className="w-full grid lg:grid-cols-3 pt-24 lg:pt-32 mt-28 min-h-full border-t-2 border-primary-bnlogo"
+        className="w-full grid lg:grid-cols-3 pt-24 lg:pt-32 mt-28 min-h-full"
         id="services"
       >
         <div className="col-span-2" data-aos="fade-right">
           <div>
             {ServiceData.map((d) => (
-              <div>
+              <div key={d.id}>
                 <p className="flex pb-4 items-center">
                   <img
                     className="rounded-full w-28 hidden lg:block"
@@ -33,19 +32,23 @@ const Service = () => {
           <div>
             <div>
               {ServiceData.map((d) => (
-                <p className="text-xl md:text-2xl text-white leading-loose">
+                <p
+                  key={d.id}
+                  className="text-xl md:text-2xl text-white leading-loose"
+                >
                   {d.service}
                 </p>
               ))}
             </div>
             <div className="grid grid-cols-2 grid-rows-2 mt-6">
               {headerSocialData.map((d) => (
-                <div>
+                <div key={d.id}>
                   <a
                     className="flex text-lg text-primary-logo items-center gap-2 mt-6"
                     href={d.link}
                     key={d.id}
                     target="_blank"
+                    rel="noreferrer"
                   >
                     {d.icon}
                     {d.label}

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { ProjectData } from "./Data";
 import { FaGithub, FaLink } from "react-icons/fa";
 import axios from "axios";
@@ -62,7 +62,10 @@ const Project = () => {
     return (
       <div>
         {ProjectData.map((d) => (
-          <p className="text-white text-center text-xl pt-28 lg:pt-44">
+          <p
+            key={d.id}
+            className="text-white text-center text-xl pt-28 lg:pt-44"
+          >
             {d.code1}
           </p>
         ))}
@@ -73,12 +76,15 @@ const Project = () => {
   return (
     <>
       <div
-        className="w-full pt-28 lg:pt-32 min-h-full overflow-hidden border-t-2 border-primary-bnlogo mt-28"
+        className="w-full pt-28 lg:pt-32 min-h-full overflow-hidden mt-28"
         id="projects"
       >
         <div data-aos="flip-down">
           {ProjectData.map((d) => (
-            <p className="text-primary-cylogo font-semibold text-6xl overflow-hidden leading-snug md:leading-normal">
+            <p
+              key={d.id}
+              className="text-primary-cylogo font-semibold text-6xl overflow-hidden leading-snug md:leading-normal"
+            >
               {d.text}
             </p>
           ))}
