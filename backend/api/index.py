@@ -4,12 +4,14 @@ Samuel Doghor Portfolio Backend
 
 # imports
 
+
 from components import Blog, Config, Project, db
 from flask import Flask, jsonify
 from flask_caching import Cache
 from flask_compress import Compress
 from flask_cors import CORS
 from flask_migrate import Migrate
+
 
 # configurations
 
@@ -103,6 +105,7 @@ def blog_view():
 
     return jsonify({"Blogs": blog}), 200
 
+
 # Error handler for all exceptions
 
 
@@ -110,12 +113,12 @@ def blog_view():
 def handle_exception(error):
     """ Handles all errors """
 
-    # Return a JSON response with an error message
     response = {
         "message": "An error occurred",
         "error": str(error)
     }
     return jsonify(response), 500
+
 
 # run
 
