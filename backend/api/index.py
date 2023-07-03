@@ -10,8 +10,8 @@ from flask_compress import Compress
 from flask_cors import CORS
 from flask_migrate import Migrate
 
-import config
-import models
+from config import Config
+from models import Project, db, Blog
 
 # configurations
 
@@ -20,11 +20,6 @@ cache = Cache()
 app = Flask(__name__)
 
 cors = CORS(app, resources={r"/*": {"origins": ["http://localhost:5173", "https://app.samdoghor.com", "https://www.app.samdoghor.com", "app.samdoghor.com", "www.app.samdoghor.com"]}})  # noqa: E501
-
-Config = config.Config
-db = models.db
-Project = models.Project
-Blog = models.Blog
 
 app.config['SECRET_KEY'] = Config.SECRET_KEY
 
