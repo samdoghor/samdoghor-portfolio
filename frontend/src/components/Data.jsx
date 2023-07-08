@@ -292,6 +292,7 @@ export const ContactData = [
     heading: "Contact",
     title: "Quick Reach / Socials",
     ticon: <MdFlashOn />,
+    country: "/img/nigeria_flag.png",
     logo: "/img/manchester-united-logo.png",
     image: "/img/marcusrashford.png",
   },

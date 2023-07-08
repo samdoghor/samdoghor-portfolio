@@ -61,7 +61,19 @@ const Contact = () => {
                       >
                         <img
                           className="w-32 mb-8 rounded-full"
-                          alt="Samuel Doghor"
+                          alt="Nigeria Flag"
+                          src={d.country}
+                        />
+                        Nigeria
+                      </a>
+                      <a
+                        className="self-center  text-white font-semibold text-lg"
+                        data-aos="fade-up"
+                        data-aos-anchor-placement="center-bottom"
+                      >
+                        <img
+                          className="w-32 mb-8 rounded-full"
+                          alt="Manchester United Logo"
                           src={d.logo}
                         />
                         Manchester United
@@ -73,7 +85,7 @@ const Contact = () => {
                       >
                         <img
                           className="w-32 mb-8 self-center rounded-full"
-                          alt="Samuel Doghor"
+                          alt="Marcus Rashford"
                           src={d.image}
                         />
                         Marcus Rashford
