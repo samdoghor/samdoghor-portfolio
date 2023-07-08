@@ -1,11 +1,9 @@
-import React from "react";
 import {
   Header,
   Hero,
   Service,
   Testimonies,
   Project,
-  Blog,
   Technologies,
   Contact,
   Footer,
@@ -24,7 +22,6 @@ const App = () => {
         <Hero />
         <Service />
         <Project />
-        <Blog />
         <Technologies />
         {/* <Testimonies /> */}
         <Contact />
