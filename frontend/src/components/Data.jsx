@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 import {
   FaGithub,
   FaLinkedin,
@@ -6,6 +7,7 @@ import {
   FaLink,
   FaGitAlt,
   FaPython,
+  FaExternalLinkAlt,
 } from "react-icons/fa";
 import {
   DiJavascript,
@@ -41,18 +43,19 @@ export const headerLogoData = [
 export const headerNavData = [
   {
     id: 1,
+    nav: "Main Page",
+    icon: <FaExternalLinkAlt />,
+    link: "https://www.samdoghor.com",
+  },
+  {
+    id: 2,
     nav: "[Services]",
     link: "#services",
   },
   {
-    id: 2,
+    id: 3,
     nav: "[Projects]",
     link: "#projects",
-  },
-  {
-    id: 3,
-    nav: "[Blog]",
-    link: "#blog",
   },
   {
     id: 4,
@@ -140,7 +143,7 @@ export const TestimoniesData = [
 export const ProjectData = [
   {
     in: 1,
-    text: "- Featured Projects",
+    text: "Featured Projects",
     code1: (
       <Typewriter loop={true} speed={100} delay={2000} text=" Loading... " />
     ),
@@ -189,18 +192,10 @@ export const ProjectDData = [
   },
 ];
 
-export const BlogData = [
-  {
-    in: 1,
-    text: "- Featured Blog",
-    cs: "Coming Soon!",
-  },
-];
-
 export const TechnologiesData = [
   {
     in: 1,
-    heading: "- Technologies",
+    heading: "Technologies",
   },
 ];
 
@@ -294,7 +289,7 @@ export const TechnologiesDData = [
 export const ContactData = [
   {
     in: 1,
-    heading: "- Contact",
+    heading: "Contact",
     title: "Quick Reach / Socials",
     ticon: <MdFlashOn />,
     logo: "/img/manchester-united-logo.png",
