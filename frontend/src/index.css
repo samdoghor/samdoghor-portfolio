@@ -18,8 +18,8 @@ body::-webkit-scrollbar-track {
 }
  
 body::-webkit-scrollbar-thumb {
-  background-color: #1e3552;
-  outline: .1px solid #1e3552;
+  background-color: #09090b;
+  outline: .1px solid #09090b;
 }
 
 .navy {
@@ -34,7 +34,7 @@ body::-webkit-scrollbar-thumb {
   width: 80vw;
   z-index: 888 !important;
   overflow-y: hidden;
-  background-color: rgba(15, 26, 41, 0.95);
+  background-color: rgba(9, 9, 11, 0.95);
   transition: 1s;
 }
 .sticky-nav .dropdown-menu-o {

@@ -17,7 +17,7 @@ AOS.init();
 const App = () => {
   return (
     <>
-      <div className="container mx-auto px-8 md:px-32 bg-gradient-to-r from-slate-800 to-slate-950 min-h-screen max-w-full">
+      <div className="container mx-auto px-8 md:px-32 bg-gradient-to-r from-zinc-800 to-zinc-950 min-h-screen max-w-full">
         <Header />
         <Hero />
         <Service />
