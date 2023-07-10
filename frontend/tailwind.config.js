@@ -14,6 +14,7 @@ export default {
           blogo: "#1e3552",
           bnlogo: "#131a26",
           cylogo: "#f4d8c6",
+          bblogo: "#27272a",
         },
       },
       fontFamily: {

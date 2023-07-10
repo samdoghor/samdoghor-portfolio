@@ -13,7 +13,7 @@ const Header = () => {
 
   const stickNavbar = () => {
     let windowHeight = window.scrollY;
-    if (windowHeight < 200) {
+    if (windowHeight < 5) {
       setStickyClass("navy");
     } else {
       setStickyClass("sticky-nav");
@@ -106,9 +106,9 @@ const Header = () => {
           </Navbar>
         </div>
 
-        <div className="pt-16 lg:pt-20 ontop">
+        <div className="pt-16 lg:pt-20 ontop" id="intro">
           <p className="text-primary-cylogo font-semibold text-5xl md:text-6xl overflow-hidden leading-snug md:leading-normal text-center">
-            - My Portolio -
+            My Portfolio
           </p>
         </div>
       </div>

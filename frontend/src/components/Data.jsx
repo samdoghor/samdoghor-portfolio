@@ -49,21 +49,26 @@ export const headerNavData = [
   },
   {
     id: 2,
+    nav: "[Intro]",
+    link: "#intro",
+  },
+  {
+    id: 3,
     nav: "[Services]",
     link: "#services",
   },
   {
-    id: 3,
+    id: 4,
     nav: "[Projects]",
     link: "#projects",
   },
   {
-    id: 4,
+    id: 5,
     nav: "[Stack]",
     link: "#stack",
   },
   {
-    id: 5,
+    id: 6,
     nav: "[Contact]",
     link: "#contact",
   },
