@@ -27,7 +27,7 @@ const Header = () => {
           <Navbar
             fluid={true}
             rounded={true}
-            className="w-full !bg-transparent shadow-xl p-4 overflow-hidden"
+            className="!bg-transparent shadow-xl p-4 overflow-hidden"
           >
             <Navbar.Brand>
               <a

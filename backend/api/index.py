@@ -19,7 +19,7 @@ cache = Cache()
 
 app = Flask(__name__)
 
-cors = CORS(app, resources={r"/*": {"origins": ["http://localhost:5173", "https://app.samdoghor.com", "https://www.app.samdoghor.com", "app.samdoghor.com", "www.app.samdoghor.com"]}})  # noqa: E501
+cors = CORS(app, resources={r"/*": {"origins": ["http://localhost:5173", "https://app.samdoghor.com", "https://www.app.samdoghor.com", "app.samdoghor.com", "www.app.samdoghor.com", "https://samdoghor.com", "https://www.samdoghor.com", "samdoghor.com", "www.samdoghor.com"]}})  # noqa: E501
 
 app.config['SECRET_KEY'] = Config.SECRET_KEY
 
@@ -69,7 +69,28 @@ def project_create(title, github, website, description, image, featured):
 def project_view():
     """ This function is use to view all projects """
     projects = Project.query.filter_by(
-        featured=True).order_by(Project.id.asc()).all()
+        featured=True).order_by(Project.created_at.desc()).all()
+
+    project = []
+
+    for proj in projects:
+        project.append({
+            "Title": proj.title,
+            "GitHub": proj.github,
+            "Website": proj.website,
+            "Description": proj.description,
+            "Image": proj.image,
+            "Featured": proj.featured
+        })
+
+    return jsonify({"Projects": project}), 200
+
+
+@app.route("/all-projects",  methods=['GET'])
+@cache.cached()
+def project_view_all():
+    """ This function is use to view all projects """
+    projects = Project.query.order_by(Project.created_at.desc()).all()
 
     project = []
 

@@ -43,7 +43,7 @@ export const headerLogoData = [
 export const headerNavData = [
   {
     id: 1,
-    nav: "Main Page",
+    nav: "Main/Blog Page",
     icon: <FaExternalLinkAlt />,
     link: "https://www.samdoghor.com",
   },
