@@ -12,7 +12,9 @@ Built with [Vite-React](https://vitejs.dev/), [Three JS](https://threejs.org/), 
 
 ## Access to my main page and blog
 
-[Samuel, Doghor](https://samdoghor.com)
+[Samuel, Doghor](https://samdoghor.com) - website
+
+[Samuel, Doghor](https://github.com/samdoghor/samdoghor-front-page) - Repo -> Built with Vue, & Tailwind
 
 ## Connect with me
 
