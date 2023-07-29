@@ -96,6 +96,7 @@ const Header = () => {
                   key={d.id}
                   href={d.link}
                   className="text-white md:hover:text-primary-logo"
+                  target={d.target}
                 >
                   <p className="flex align-middle gap-2">
                     {d.nav} {d.icon}

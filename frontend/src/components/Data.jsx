@@ -8,6 +8,8 @@ import {
   FaGitAlt,
   FaPython,
   FaExternalLinkAlt,
+  FaVuejs,
+  FaUbuntu,
 } from "react-icons/fa";
 import {
   DiJavascript,
@@ -24,6 +26,14 @@ import FlaskOriginal from "react-devicons/flask/original-wordmark";
 import KubernetesPlain from "react-devicons/kubernetes/plain";
 import TypescriptPlain from "react-devicons/typescript/plain";
 import NodejsPlain from "react-devicons/nodejs/plain";
+import {
+  SiPostman,
+  SiSwagger,
+  SiMarkdown,
+  SiWindows,
+  SiVercel,
+  SiRender,
+} from "react-icons/si";
 import Typewriter from "react-ts-typewriter";
 
 const currentYear = new Date().getFullYear();
@@ -43,9 +53,10 @@ export const headerLogoData = [
 export const headerNavData = [
   {
     id: 1,
-    nav: "Main/Blog Page",
+    nav: "Home/Blog",
     icon: <FaExternalLinkAlt />,
     link: "https://www.samdoghor.com",
+    target: "_blank",
   },
   {
     id: 2,
@@ -273,21 +284,69 @@ export const TechnologiesDData = [
   },
   {
     id: 12,
-    label: "Flask",
+    label: "Kubernetes",
     icon: <KubernetesPlain color="#FFFFFF" />,
     category: "Orchestration",
   },
   {
     id: 13,
-    label: "Flask",
+    label: "TypeScript",
     icon: <TypescriptPlain color="#FFFFFF" />,
     category: "Language",
   },
   {
     id: 14,
-    label: "Flask",
+    label: "NodeJS",
     icon: <NodejsPlain color="#FFFFFF" />,
     category: "Runtime Env.",
+  },
+  {
+    id: 15,
+    label: "Vue",
+    icon: <FaVuejs />,
+    category: "Framework",
+  },
+  {
+    id: 16,
+    label: "Postman",
+    icon: <SiPostman />,
+    category: "Tester/Doc.",
+  },
+  {
+    id: 17,
+    label: "Swagger UI",
+    icon: <SiSwagger />,
+    category: "Documentation",
+  },
+  {
+    id: 18,
+    label: "MarkDown",
+    icon: <SiMarkdown />,
+    category: "Language",
+  },
+  {
+    id: 19,
+    label: "Ubuntu",
+    icon: <FaUbuntu />,
+    category: "OS",
+  },
+  {
+    id: 20,
+    label: "Windows",
+    icon: <SiWindows />,
+    category: "OS",
+  },
+  {
+    id: 21,
+    label: "Vercel",
+    icon: <SiVercel />,
+    category: "Deployment",
+  },
+  {
+    id: 22,
+    label: "Render",
+    icon: <SiRender />,
+    category: "Deployment",
   },
 ];
 

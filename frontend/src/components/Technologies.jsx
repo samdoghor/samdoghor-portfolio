@@ -27,11 +27,14 @@ const Technologies = () => {
                 className="overflow-hidden rounded-2xl drop-shadow-md hover:animate-pulse hover:cursor-pointer"
               >
                 <div>
-                  <div className="grid text-4xl text-white font-nova tracking-wider overflow-hidden font-bold p-2 justify-items-center">
+                  <div className="grid text-4xl text-white font-nova tracking-wider overflow-hidden font-bold p-1 justify-items-center">
                     <span className="text-center"> {d.icon} </span>
                   </div>
-                  <div className="p-2 rounded-full text-primary-ylogo font-ubuntu font-bold tracking-wide text-center">
+                  <div className="p-1 rounded-full text-primary-ylogo font-ubuntu font-bold tracking-wide text-center">
                     {d.category}
+                  </div>
+                  <div className="pb-8 rounded-full text-white font-ubuntu font-normal tracking-wide text-center text-xs">
+                    {d.label}
                   </div>
                 </div>
               </div>
