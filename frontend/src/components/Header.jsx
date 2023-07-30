@@ -108,7 +108,7 @@ const Header = () => {
         </div>
 
         <div className="pt-16 lg:pt-20 ontop" id="intro">
-          <p className="text-primary-cylogo font-semibold text-5xl md:text-6xl overflow-hidden leading-snug md:leading-normal text-center">
+          <p className="text-primary-cylogo font-semibold text-2xl overflow-hidden leading-snug md:leading-normal text-center">
             My Portfolio
           </p>
         </div>
