@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import * as THREE from "three";
-import { OrbitControls } from "three/examples/jsm/controls/OrbitControls"; // Update the import path
+import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 
 const Galaxy = () => {
   const canvasRef = useRef(null);
@@ -82,6 +82,15 @@ const Galaxy = () => {
 
     animate();
 
+    // Simulate a click event to start the animation on mobile
+    const simulateClickEvent = () => {
+      const clickEvent = new Event("click");
+      window.dispatchEvent(clickEvent);
+    };
+
+    // Call the simulateClickEvent function after a short delay to ensure the component has mounted
+    const timeoutId = setTimeout(simulateClickEvent, 100);
+
     // Handle window resize
     const handleResize = () => {
       const width = window.innerWidth;
@@ -98,13 +107,14 @@ const Galaxy = () => {
       window.removeEventListener("mousemove", handleMouseMove);
       window.removeEventListener("click", handleMouseClick);
       controls.dispose(); // Clean up the controls
+      clearTimeout(timeoutId);
     };
   }, []);
 
   return (
     <div
       ref={canvasRef}
-      style={{ position: "fixed", top: 0, left: 0, zIndex: -2 }} // Set z-index to -1 for the Galaxy component
+      style={{ position: "fixed", top: 0, left: 0, zIndex: -2 }}
     ></div>
   );
 };

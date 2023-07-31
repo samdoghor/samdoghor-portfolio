@@ -13,7 +13,7 @@ const Service = () => {
               <div key={d.id}>
                 <p className="flex pb-4 items-center">
                   <img
-                    className="rounded-full w-28 hidden lg:block"
+                    className="rounded-full w-28 block"
                     alt="Samuel Doghor"
                     src="/img/doghs.jpg"
                   />
