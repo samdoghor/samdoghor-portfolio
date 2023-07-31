@@ -77,19 +77,15 @@ const Galaxy = () => {
       galaxy.rotation.x += mouseY.current * 0.008;
       galaxy.rotation.y += mouseX.current * 0.008;
 
+      // Rotate the galaxy automatically
+      galaxy.rotation.y += 0.001;
+
+      controls.update(); // Update the controls for damping effect
+
       renderer.render(scene, camera);
     };
 
     animate();
-
-    // Simulate a click event to start the animation on mobile
-    const simulateClickEvent = () => {
-      const clickEvent = new Event("click");
-      window.dispatchEvent(clickEvent);
-    };
-
-    // Call the simulateClickEvent function after a short delay to ensure the component has mounted
-    const timeoutId = setTimeout(simulateClickEvent, 100);
 
     // Handle window resize
     const handleResize = () => {
@@ -107,7 +103,6 @@ const Galaxy = () => {
       window.removeEventListener("mousemove", handleMouseMove);
       window.removeEventListener("click", handleMouseClick);
       controls.dispose(); // Clean up the controls
-      clearTimeout(timeoutId);
     };
   }, []);
 
