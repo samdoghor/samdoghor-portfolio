@@ -182,19 +182,6 @@ export const ProjectDData = [
   },
   {
     id: 2,
-    Title: "Foodlogic",
-    GitHub: "https://github.com/samdoghor/foodlogic",
-    githubi: <FaGithub />,
-    labelg: "Github",
-    Website: "#",
-    websitei: <FaLink />,
-    labelw: "Website",
-    Description:
-      "The app simplifies nutrition tracking, using tools such as calorie counters, nutrient trackers, and recipe calculators.",
-    Image: "/img/foodlogic.png",
-  },
-  {
-    id: 3,
     Title: "Gomerce",
     GitHub: "https://github.com/samdoghor/GomerceBE",
     githubi: <FaGithub />,
@@ -238,7 +225,7 @@ export const TechnologiesDData = [
     id: 4,
     label: "React",
     icon: <DiReact />,
-    category: "Framework",
+    category: "Library",
   },
   {
     id: 5,
