@@ -238,7 +238,7 @@ export const TechnologiesDData = [
     id: 4,
     label: "React",
     icon: <DiReact />,
-    category: "Framework",
+    category: "Library",
   },
   {
     id: 5,
