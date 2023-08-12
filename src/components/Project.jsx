@@ -1,57 +1,57 @@
-import { useEffect, useState } from "react";
-import { ProjectData } from "./Data";
+// import { useEffect, useState } from "react";
+import { ProjectData, ProjectDData } from "./Data";
 import { FaGithub, FaLink } from "react-icons/fa";
-import axios from "axios";
+// import axios from "axios";
 
 const Project = () => {
-  const [projects, setProjects] = useState([]);
-  const [isLoading, setIsLoading] = useState(true); // Add loading state
+  // const [projects, setProjects] = useState([]);
+  // const [isLoading, setIsLoading] = useState(true); // Add loading state
 
-  useEffect(() => {
-    const fetchData = () => {
-      axios
-        // .get("https://samdoghor-portfolio-backend.vercel.app/projects")
-        .get("https://samdoghor-portfolio-backend.onrender.com/projects")
-        // .get("http://127.0.0.1:5000/projects")
-        .then((response) => {
-          if (response.status === 200) {
-            setProjects(response.data.Projects);
-          } else {
-            console.error("Error fetching projects:", response.status);
-          }
-        })
-        .catch((error) => {
-          console.error("Error fetching projects:", error);
-        })
-        .finally(() => {
-          setIsLoading(false);
-        });
-    };
+  // useEffect(() => {
+  //   const fetchData = () => {
+  //     axios
+  //       // .get("https://samdoghor-portfolio-backend.vercel.app/projects")
+  //       .get("https://samdoghor-portfolio-backend.onrender.com/projects")
+  //       // .get("http://127.0.0.1:5000/projects")
+  //       .then((response) => {
+  //         if (response.status === 200) {
+  //           setProjects(response.data.Projects);
+  //         } else {
+  //           console.error("Error fetching projects:", response.status);
+  //         }
+  //       })
+  //       .catch((error) => {
+  //         console.error("Error fetching projects:", error);
+  //       })
+  //       .finally(() => {
+  //         setIsLoading(false);
+  //       });
+  //   };
 
-    fetchData(); // Initial fetch
+  //   fetchData(); // Initial fetch
 
-    const interval = setInterval(fetchData, 10 * 60 * 1000); // Fetch every 10 minutes
+  //   const interval = setInterval(fetchData, 10 * 60 * 1000); // Fetch every 10 minutes
 
-    return () => {
-      clearInterval(interval); // Clean up interval on component unmount
-    };
-  }, []);
+  //   return () => {
+  //     clearInterval(interval); // Clean up interval on component unmount
+  //   };
+  // }, []);
 
-  if (isLoading) {
-    // Render loading indicator or placeholder content while loading
-    return (
-      <div>
-        {ProjectData.map((d) => (
-          <p
-            key={d.id}
-            className="text-white text-center text-xl pt-28 lg:pt-44"
-          >
-            {d.code1}
-          </p>
-        ))}
-      </div>
-    );
-  }
+  // if (isLoading) {
+  //   // Render loading indicator or placeholder content while loading
+  //   return (
+  //     <div>
+  //       {ProjectData.map((d) => (
+  //         <p
+  //           key={d.id}
+  //           className="text-white text-center text-xl pt-28 lg:pt-44"
+  //         >
+  //           {d.code1}
+  //         </p>
+  //       ))}
+  //     </div>
+  //   );
+  // }
 
   return (
     <>
@@ -70,7 +70,7 @@ const Project = () => {
           ))}
         </div>
         <div className="overflow-hidden drop-shadow-xl pt-16">
-          {projects.map((project, index) => (
+          {ProjectDData.map((project, index) => (
             <div
               className="w-full grid lg:grid-cols-2 pb-12"
               data-aos="zoom-out"
