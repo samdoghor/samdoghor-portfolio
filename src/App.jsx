@@ -10,7 +10,7 @@ import {
 } from "./components/Index";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Galaxy from "./Galaxy";
+// import Galaxy from "./Galaxy";
 
 AOS.init();
 
@@ -31,7 +31,7 @@ const App = () => {
         <Footer />
         <ScrollToTop />
       </div>
-      <div
+      {/* <div
         style={{
           position: "fixed",
           top: 0,
@@ -41,7 +41,7 @@ const App = () => {
         }} // Set pointer-events to none
       >
         <Galaxy />
-      </div>
+      </div> */}
     </>
   );
 };
