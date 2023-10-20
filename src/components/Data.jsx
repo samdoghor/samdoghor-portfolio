@@ -116,8 +116,7 @@ export const HeroData = [
   {
     id: 1,
     name: "Samuel, Doghor",
-    stack: "Backend Engineer",
-    text: "I also play around with frontend.",
+    stack: "Software Engineer",
     code1: (
       <Typewriter
         loop={true}

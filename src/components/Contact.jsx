@@ -3,12 +3,9 @@ import { ContactData, contactSocialData } from "./Data";
 const Contact = () => {
   return (
     <>
-      <div
-        className="w-full pt-28 lg:pt-32 min-h-full overflow-hidden mt-28"
-        id="contact"
-      >
+      <div className="w-full min-h-full overflow-hidden mt-10" id="contact">
         <div>
-          <div data-aos="flip-down">
+          <div>
             {ContactData.map((d) => (
               <div key={d.id}>
                 <p className="text-primary-cylogo font-semibold text-5xl md:text-6xl overflow-hidden leading-snug md:leading-normal">
@@ -54,11 +51,7 @@ const Contact = () => {
                       key={d.id}
                       className="flex justify-center items-center gap-10 h-fit overflow-hidden pt-10 text-center"
                     >
-                      <a
-                        className="self-center  text-white font-semibold text-lg"
-                        data-aos="fade-up"
-                        data-aos-anchor-placement="center-bottom"
-                      >
+                      <a className="self-center  text-white font-semibold text-lg">
                         <img
                           className="w-32 mb-8 rounded-full"
                           alt="Nigeria Flag"
@@ -66,11 +59,7 @@ const Contact = () => {
                         />
                         Nigeria
                       </a>
-                      <a
-                        className="self-center  text-white font-semibold text-lg"
-                        data-aos="fade-up"
-                        data-aos-anchor-placement="center-bottom"
-                      >
+                      <a className="self-center  text-white font-semibold text-lg">
                         <img
                           className="w-32 mb-8 rounded-full"
                           alt="Manchester United Logo"
