@@ -6,8 +6,8 @@ const Contact = () => {
       <div className="w-full min-h-full overflow-hidden mt-10" id="contact">
         <div>
           <div>
-            {ContactData.map((d) => (
-              <div key={d.id}>
+            {ContactData.map((d, index) => (
+              <div key={index}>
                 <p className="text-primary-cylogo font-semibold text-5xl md:text-6xl overflow-hidden leading-snug md:leading-normal">
                   {d.heading}
                 </p>
@@ -18,8 +18,8 @@ const Contact = () => {
             <div className="w-full grid lg:grid-cols-2">
               <div>
                 <div>
-                  {ContactData.map((d) => (
-                    <div key={d.id}>
+                  {ContactData.map((d, index) => (
+                    <div key={index}>
                       <p className="flex  text-primary-ylogo text-2xl align-middle gap-4">
                         {d.ticon} {d.title}
                       </p>
@@ -27,12 +27,11 @@ const Contact = () => {
                   ))}
                 </div>
                 <div className="grid grid-cols-2 grid-rows-2 mt-6">
-                  {contactSocialData.map((d) => (
-                    <div key={d.id}>
+                  {contactSocialData.map((d, index) => (
+                    <div key={index}>
                       <a
                         className="flex text-lg text-white items-center gap-2 mt-6"
                         href={d.link}
-                        key={d.id}
                         target="_blank"
                         rel="noreferrer"
                         data-aos="zoom-in"
@@ -46,9 +45,9 @@ const Contact = () => {
               </div>
               <div>
                 <div>
-                  {ContactData.map((d) => (
+                  {ContactData.map((d, index) => (
                     <div
-                      key={d.id}
+                      key={index}
                       className="flex justify-center items-center gap-10 h-fit overflow-hidden pt-10 text-center"
                     >
                       <a className="self-center  text-white font-semibold text-lg">
