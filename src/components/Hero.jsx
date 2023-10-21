@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <>
       <div className="w-full grid lg:grid-cols-3 pt-12 min-h-full">
-        <div className="w-full lg:order-2 place-self-center" data-aos="flip-up">
+        <div className="w-full lg:order-2 place-self-center">
           <img
             className="rounded-full"
             alt="Samuel Doghor"
@@ -33,13 +33,15 @@ const Hero = () => {
                 {d.code3}
               </p>
               <p className="text-primary-ylogo text-4xl md:overflow-hidden pb-2 md:pb-8 font-genos font-semibold">
-                This has been moved permanently to
-                <a href="www.samdoghor.com" className="ps-2">
-                  samdoghor.com click to visit
-                </a>
+                {d.moved1}
+                <span>
+                  <a className="ps-2" href={d.movedlinked}>
+                    {d.moved2}
+                  </a>
+                </span>
               </p>
               <p className="text-white font-black md:overflow-hidden pb-8 tracking-widest font-ubuntu">
-                This page is set for deletion by 1st Janaury, 2024
+                {d.moved3}
               </p>
             </span>
           ))}
